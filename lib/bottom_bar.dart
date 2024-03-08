@@ -200,14 +200,14 @@ class _BottomBarItemWidget extends StatelessWidget {
                   IconTheme(
                     data: IconThemeData(
                       color: Color.lerp(inactiveColor, activeIconColor, value),
-                      size: 24,
+                      size: 36,
                     ),
                     child: isSelected ? icon : (inactiveIcon ?? icon),
                   ),
                   if (title != null)
                     ClipRect(
                       child: SizedBox(
-                        height: 20,
+                        height: kBottomNavigationBarHeight - 16,
                         child: Align(
                           alignment: const Alignment(-0.2, 0),
                           widthFactor: value,
